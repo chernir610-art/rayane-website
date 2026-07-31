@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>موقعي الشخصي</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>أهلاً بكم في موقعي</h1>
+    <p>اسمي ريان، عمري 18 سنة، وأتعلم برمجة المواقع.</p>
+
+    <button onclick="alert('سأصبح مطور مواقع محترفاً بإذن الله!')">
+        ابدأ رحلتي
+    </button>
+
+    <button onclick="document.body.style.backgroundColor='lightgreen'">
+        غيّر لون الصفحة
+    </button>
+</header>
+
+<nav>
+    <a href="#">الرئيسية</a>
+    <a href="#">من أنا</a>
+    <a href="#">مهاراتي</a>
+    <a href="#">تواصل معي</a>
+</nav>
+
+<section>
+    <h2>مهاراتي</h2>
+    <ul>
+        <li>✅ HTML</li>
+        <li>✅ CSS</li>
+        <li>🔄 JavaScript</li>
+    </ul>
+</section>
+
+<section id="cars">
+    <h2>سياراتي المفضلة</h2>
+
+    <div class="car-card">
+        <img src="golf7.jpg" alt="Golf 7">
+        <h3>Volkswagen Golf 7</h3>
+        <p>سنة الصنع: 2013</p>
+        <p>المحرك: 1.4 TSI</p>
+        <p>الوقود: بنزين</p>
+        <p>السعر: 35,000 دينار</p>
+        <button onclick="showDetails('golf')">عرض التفاصيل</button>
+    </div>
+
+    <div class="car-card">
+        <img src="seat.jpg" alt="Seat Leon">
+        <h3>Seat Leon</h3>
+        <p>سنة الصنع: 2016</p>
+        <p>المحرك: 1.4 TSI</p>
+        <p>الوقود: بنزين</p>
+        <p>السعر: 38,000 دينار</p>
+        <button onclick="showDetails('seat')">عرض التفاصيل</button>
+    </div>
+
+    <div class="car-card">
+        <img src="skoda.jpg" alt="Skoda Octavia">
+        <h3>Skoda Octavia</h3>
+        <p>سنة الصنع: 2017</p>
+        <p>المحرك: 1.6 TDI</p>
+        <p>الوقود: ديزل</p>
+        <p>السعر: 39,000 دينار</p>
+        <button onclick="showDetails('skoda')">عرض التفاصيل</button>
+    </div>
+
+</section>
+
+<script src="script.js"></script>
+
+</body>
+</html>
